@@ -40,9 +40,13 @@ const (
 
 	VirtualClusterProDistroExternalDatabase FeatureName = "vcp-distro-external-database" // External Database
 
+	VirtualClusterProDistroExternalDatabaseRdsIam FeatureName = "vcp-distro-external-database-rds-iam" // External Database RDS IAM Authentication
+
 	VirtualClusterProDistroPrivateNodes FeatureName = "vcp-distro-private-nodes" // Private Nodes
 
 	ConnectorExternalDatabase FeatureName = "connector-external-database" // Database Connector
+
+	ConnectorExternalDatabaseEksPodIdentity FeatureName = "connector-external-database-eks-pod-identity" // EKS Pod Identity for External Database Connections
 
 	VirtualClusterProDistroSleepMode FeatureName = "vcp-distro-sleep-mode" // SleepMode
 
@@ -136,8 +140,10 @@ func GetFeatures() []FeatureName {
 		VirtualClusterProDistroIntegrationsCertManager,
 		VirtualClusterProDistroFips,
 		VirtualClusterProDistroExternalDatabase,
+		VirtualClusterProDistroExternalDatabaseRdsIam,
 		VirtualClusterProDistroPrivateNodes,
 		ConnectorExternalDatabase,
+		ConnectorExternalDatabaseEksPodIdentity,
 		VirtualClusterProDistroSleepMode,
 		Devpod,
 		Namespaces,
